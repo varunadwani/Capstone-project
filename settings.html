@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GTA Hub - Settings</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 15px 30px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #f39c12;
+      border-bottom: 2px solid #f39c12;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #f39c12a0;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #f39c12;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      font-size: 16px;
+      color: #f7c851;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #333;
+      color: #eee;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    select:focus {
+      background-color: #444;
+      outline: none;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    button {
+      background-color: #f39c12;
+      color: #121212;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d48806;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #f7c851;
+      border-bottom: 1px solid #444;
+      padding-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>GTA Hub Settings</header>
+  <main>
+    <h1>Account Settings</h1>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Funky99gaming" />
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="user@example.com" />
+      </div>
+
+      <div>
+        <label for="password">Change Password</label>
+        <input type="password" id="password" placeholder="New password" />
+      </div>
+
+      <div>
+        <label for="theme">Theme & Appearance</label>
+        <select id="theme">
+          <option value="dark" selected>Dark Mode</option>
+          <option value="light">Light Mode</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Notifications</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="emailNotif" checked />
+          <label for="emailNotif">Email Notifications</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="siteNotif" checked />
+          <label for="siteNotif">Site Notifications</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="language">Language Preferences</label>
+        <select id="language">
+          <option value="en" selected>English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+      </div>
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </main>
+</body>
+</html>

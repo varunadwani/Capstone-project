@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0c0c0c;
+  color: #f1f1f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Header styles */
+header {
+  padding: 20px 0;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #e50914;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #e50914;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #bbb;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #e50914;
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('Screenshot\ 2025-11-20\ at\ 1.48.56\ PM.png');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 12, 12, 0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e50914;
+  text-shadow: 2px 2px 8px #000;
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background-color: #e50914;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background-color: #fb0f13;
+}
+
+/* About section */
+.game-description {
+  padding: 60px 20px;
+  background-color: #181818;
+  text-align: center;
+}
+.game-description h2 {
+  color: #e50914;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.game-description p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Teaser images row */
+.teaser-images {
+  padding: 50px 20px;
+  background-color: #111;
+}
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.img-box {
+  flex: 1 1 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #e50914;
+}
+.img-box img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  transition: transform 0.3s;
+}
+.img-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid #e50914;
+  color: #888;
+}
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .images-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-box {
+    width: 90%;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}

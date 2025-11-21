@@ -1,0 +1,180 @@
+body {
+  font-family: 'Pricedown', Impact, 'Arial Black', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #181824 0%, #2a045a 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #111118e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 20px 32px;
+  z-index: 10;
+  border-bottom: 2px solid #353564;
+  box-shadow: 0 6px 24px #11111895;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.rockstar-logo {
+  width: 36px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 10px;
+  background: #181824;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #fff3;
+  margin-left: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background: #FF00C8;
+  color: #fff;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.gta-main {
+  max-width: 960px;
+  margin: 40px auto 0 auto;
+  padding: 16px;
+  background-repeat: cover;
+}
+
+.gta-hero {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 24px;
+  box-shadow: 0 0 32px #222244aa;
+  margin-bottom: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gta-description h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #FF00C8;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #222244cc;
+}
+
+.gta-description p {
+  font-size: 1.26rem;
+  line-height: 1.58;
+  background: rgba(24,24,36,0.92);
+  border-radius: 14px;
+  padding: 24px 18px;
+  margin: 0 auto 32px auto;
+  max-width: 880px;
+}
+
+.gallery {
+  margin: 44px 0 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #00FFF6aa;
+  transition: transform 0.27s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 0 40px #FF00C8aa;
+}
+
+.gallery-caption {
+  width: 100%;
+  margin-top: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+footer {
+  background: #111118;
+  border-top: 2px solid #353564;
+  padding: 17px 0 14px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #00FFF6;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin-right: 10px;
+  color: #FF00C8;
+}
+.footer-social a:last-child {
+  margin-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-inner, .gallery {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .gta-main {
+    padding: 10px;
+  }
+  .gallery-img {
+    width: 98vw;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 220px;
+  }
+}
