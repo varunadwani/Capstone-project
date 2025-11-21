@@ -17,9 +17,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 32px 20px 32px;
-  z-index: 10;
-  border-bottom: 2px solid #353564;
-  box-shadow: 0 6px 24px #11111895;
 }
 
 .logo-section {
@@ -29,7 +26,6 @@ body {
 
 .rockstar-logo {
   width: 36px;
-  margin-right: 10px;
 }
 
 nav a {
@@ -42,7 +38,6 @@ nav a {
   text-decoration: none;
   border: 2px solid #fff3;
   margin-left: 8px;
-  transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
@@ -72,7 +67,6 @@ nav a:hover {
   width: 100%;
   max-width: 700px;
   border-radius: 24px;
-  box-shadow: 0 0 32px #222244aa;
   margin-bottom: 32px;
   display: block;
   margin-left: auto;
@@ -108,7 +102,6 @@ nav a:hover {
 .gallery-img {
   width: 280px;
   height: 160px;
-  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 0 16px #00FFF6aa;
   transition: transform 0.27s;
